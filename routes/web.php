@@ -18,6 +18,12 @@ Route::get('/go', 'Controller@showMainPage')->name('main');
 Route::get('/hi' , function (){
     // 測試一：取得users資料表的全部資料
     $hi = DB::table('b')->get();
-    return $hi;9
+    return $hi;
 });
+Route::get('/test' , function (){
+    // 測試annotator plugin的使用
+    return view(test.plugin);
+});
+Route::get('/search', 'Controller@read');
 
+?>
