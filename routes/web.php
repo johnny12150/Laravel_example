@@ -22,7 +22,7 @@ Route::get('/hi' , function (){
 });
 Route::get('/test' , function (){
     // 測試annotator plugin的使用
-    return view(test.plugin);
+    return view('test.plugin');
 });
 Route::get('/search', 'Controller@read');
 

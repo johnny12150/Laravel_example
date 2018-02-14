@@ -6,13 +6,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <title>Laravel</title>
-
+    <script src="http://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script src="http://172.16.100.20:9999/js/plugin.js"></script>
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Raleway:100,600" rel="stylesheet" type="text/css">
 
     <!--js-->
-    <script src="{{ asset('js/plugin.js')}}"></script>
-    <script src="{{ asset('js/annotator.js')}}"></script>
+    {{--<script src="{{ asset('js/plugin.js')}}"></script>--}}
+    {{--<script src="{{ asset('js/annotator.js')}}"></script>--}}
+    <script src="http://172.16.100.20:9999/js/annotator.js"></script>
+
+
 
     <!-- Styles -->
     <style>
@@ -69,6 +73,12 @@
     </style>
 </head>
 <body>
+<h1>hi!!</h1>
+
+<div>
+    <?php //echo $data ?>
+    {{ $data }}
+</div>
 
 </body>
 </html>

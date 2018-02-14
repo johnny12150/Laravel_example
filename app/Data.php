@@ -17,6 +17,6 @@ class Data extends Model
     {
         $data = self::get();
         // same as DB::table('b')->get();
-        return $data;
+       return $data;
     }
 }
