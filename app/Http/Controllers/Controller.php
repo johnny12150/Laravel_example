@@ -15,6 +15,7 @@ class Controller extends BaseController
     public  function showMainPage() {
         return view("mainpage");
     }
+
     public  function  read() {
         return view('test.plugin' , ['data' => Data::read()]);
     }
